@@ -1,59 +1,30 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import {ToDo} from './ToDo';
-import {v1} from "uuid";
+import {TasksType, Todolist} from "./Components/Todolist";
 
-export type TasksType = {
-    id: string
-    title: string
-    isDone: boolean
-}
-export type ValueFilterType = 'All' | 'Active' | 'Completed'
 
 function App() {
 
-    const [tasks, setTasks] = useState<Array<TasksType>>([
-        {id: v1(), title: 'HTML', isDone: true},
-        {id: v1(), title: 'JS', isDone: false},
-        {id: v1(), title: 'React', isDone: false},
-    ])
-    const [filter, setFilter] = useState<ValueFilterType>('All')
+    let task1: TasksType[] = [
+        {id: 1, title: 'HTML & CSS', isDone: true},
+        {id: 2, title: 'JavaScript', isDone: true},
+        {id: 3, title: 'React', isDone: false},
+    ]
 
-    const addTask = (title: string) => {
-        const newTask = {id: v1(), title: title, isDone: false};
-        setTasks([newTask, ...tasks])
-    }
-
-    const removeTasks = (id: string) => {
-       setTasks(tasks.filter( t => t.id !== id))
-    }
-
-    const changeFiler = (value: ValueFilterType) => {
-        setFilter(value)
-    }
-    let tasksForTodo = tasks
-    if (filter === 'Active'){
-        tasksForTodo = tasks.filter( t => t.isDone )
-    }
-    if (filter === 'Completed'){
-        tasksForTodo = tasks.filter( t => !t.isDone )
-    }
-
-    const changeStatus = (taskId: string, isDone: boolean) => {
-      setTasks(tasks.map( t => t.id === taskId ? {...t, isDone: isDone} : t))
-    }
+    let task2: TasksType[] = [
+        {id: 1, title: 'Book', isDone: true},
+        {id: 2, title: 'Milk', isDone: true},
+        {id: 3, title: 'PC', isDone: false},
+    ]
 
     return <div className='App'>
-        <ToDo title={'What to learn'}
-              tasks={tasksForTodo}
-              removeTasks={removeTasks}
-              changeFiler={changeFiler}
-              addTask={addTask}
-              changeStatus={changeStatus}
-              filter={filter}
-
+        <Todolist title='What to learn'
+                  tasks={task1}
         />
-</div>
+        <Todolist title='What to buy'
+                  tasks={task2}
+        />
+    </div>
 }
 
 export default App;
