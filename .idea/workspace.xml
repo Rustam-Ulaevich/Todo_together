@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Repeat the Todolist course. 2 lesson">
-      <change afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Repeat the Todolist course. 3 lesson">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Todolist.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -107,7 +112,15 @@
       <workItem from="1648620417607" duration="19009000" />
       <workItem from="1668447075840" duration="6280000" />
       <workItem from="1668494229527" duration="6231000" />
-      <workItem from="1668746685589" duration="5681000" />
+      <workItem from="1668746685589" duration="7057000" />
+      <workItem from="1669184931360" duration="1231000" />
+      <workItem from="1669616086742" duration="4516000" />
+      <workItem from="1671168789429" duration="5187000" />
+      <workItem from="1671828248906" duration="598000" />
+      <workItem from="1671833867984" duration="728000" />
+      <workItem from="1672080881016" duration="27000" />
+      <workItem from="1672083946724" duration="6000" />
+      <workItem from="1672204538551" duration="10710000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -123,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668499761479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Repeat the Todolist course. 3 lesson">
+      <created>1668758211630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668758211631</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +164,7 @@
     <MESSAGE value="Create components" />
     <MESSAGE value="Repeat the Todolist course. 1 lesson" />
     <MESSAGE value="Repeat the Todolist course. 2 lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repeat the Todolist course. 2 lesson" />
+    <MESSAGE value="Repeat the Todolist course. 3 lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repeat the Todolist course. 3 lesson" />
   </component>
 </project>
