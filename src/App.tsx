@@ -4,55 +4,52 @@ import {v1} from "uuid";
 
 export type ValueFilterType = 'All' | 'Active' | 'Completed'
 
-
-
 const App = () => {
 
     let [tasks, setTasks] = useState([
-        {id: v1(), title: 'Milk', isDone: false},
-        {id: v1(), title: 'Beer', isDone: false},
-        {id: v1(), title: 'Meat', isDone: true},
-        {id: v1(), title: 'Board', isDone: false},
+        {id: v1(), title: 'HTML', isDone: true},
+        {id: v1(), title: 'CSS', isDone: false},
+        {id: v1(), title: 'JS', isDone: false},
     ])
-    let [filter, setFilter] = useState<ValueFilterType>("All")
+    let [filter, setFilter] = useState<ValueFilterType>('All')
 
-    function addTask(title: string){
-        let newTask = {id: v1(), title: title, isDone: false}
-        setTasks([newTask, ...tasks])
+    function addTasks(title: string) {
+        let newTasks = {id: v1(), title: title, isDone: false}
+        setTasks([newTasks, ...tasks])
     }
 
-    function removeTask(id: string) {
+    function removeTasks(id: string) {
         setTasks(tasks.filter( t => t.id !== id))
     }
 
-    function filterTasks(value: ValueFilterType) {
+    function changeFilter(value: ValueFilterType) {
         setFilter(value)
     }
 
-    function changeStatusTask(id: string, value: boolean) {
-        let findTask = tasks.find( t => t.id === id)
-        if(findTask){
-            findTask.isDone = value
+    function changeTaskStatus(id: string, value: boolean) {
+        let findTasks = tasks.find( t => t.id == id)
+        if(findTasks){
+            findTasks.isDone = value
         }
         setTasks([...tasks])
     }
 
     let filteredTasks = tasks
+    if(filter == 'Active'){
+        filteredTasks = tasks.filter( t => !t.isDone )
+    }
+    if(filter == 'Completed'){
+        filteredTasks = tasks.filter( t => t.isDone )
+    }
 
-    if( filter === "Active" ){
-        filteredTasks = filteredTasks.filter( t => !t.isDone)
-    }
-    if( filter === "Completed" ){
-        filteredTasks = filteredTasks.filter( t => t.isDone)
-    }
 
     return <div className='App'>
-        <Todolist title='What to buy'
-                  tasks = {filteredTasks}
-                  removeTask = {removeTask}
-                  addTask = {addTask}
-                  filterTasks = {filterTasks}
-                  changeStatusTask = { changeStatusTask }
+        <Todolist title={'What to learn'}
+                  tasks={filteredTasks}
+                  removeTasks={removeTasks}
+                  changeFilter={changeFilter}
+                  addTasks={addTasks}
+                  changeTaskStatus={changeTaskStatus}
         />
 
     </div>
