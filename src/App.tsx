@@ -1,6 +1,7 @@
 import {Todolist} from "./Todolist";
 import {useState} from "react";
 import {v1} from "uuid";
+import './App.css'
 
 export type ValueFilterType = 'All' | 'Active' | 'Completed'
 
@@ -50,6 +51,7 @@ const App = () => {
                   changeFilter={changeFilter}
                   addTasks={addTasks}
                   changeTaskStatus={changeTaskStatus}
+                  filter={filter}
         />
 
     </div>

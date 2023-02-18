@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="repeating lessons">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +116,7 @@
       <workItem from="1672080881016" duration="27000" />
       <workItem from="1672083946724" duration="6000" />
       <workItem from="1672204538551" duration="12267000" />
-      <workItem from="1676711483393" duration="6314000" />
+      <workItem from="1676711483393" duration="11044000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676717835304</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="repeating lessons">
+      <created>1676717892558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676717892558</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
