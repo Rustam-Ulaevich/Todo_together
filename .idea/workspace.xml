@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="repeating lessons">
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Completed first level!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -116,7 +116,9 @@
       <workItem from="1672080881016" duration="27000" />
       <workItem from="1672083946724" duration="6000" />
       <workItem from="1672204538551" duration="12267000" />
-      <workItem from="1676711483393" duration="11044000" />
+      <workItem from="1676711483393" duration="13638000" />
+      <workItem from="1676812562094" duration="2949000" />
+      <workItem from="1676821807103" duration="1780000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676717892558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Completed first level!">
+      <created>1676727221724</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676727221724</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +199,7 @@
     <MESSAGE value="Repeat the Todolist course. 2 lesson" />
     <MESSAGE value="Repeat the Todolist course. 3 lesson" />
     <MESSAGE value="repeating lessons" />
-    <option name="LAST_COMMIT_MESSAGE" value="repeating lessons" />
+    <MESSAGE value="Completed first level!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed first level!" />
   </component>
 </project>
