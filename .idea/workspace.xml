@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Change Todolist.tsx!">
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Change Todolist, App.tsx!">
+      <change afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -57,6 +59,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src\EditableSpan.tsx" />
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src\Todolist.tsx" />
     </key>
   </component>
@@ -120,7 +123,9 @@
       <workItem from="1676812562094" duration="2949000" />
       <workItem from="1676821807103" duration="1780000" />
       <workItem from="1676827754973" duration="470000" />
-      <workItem from="1676845422041" duration="8785000" />
+      <workItem from="1676845422041" duration="9618000" />
+      <workItem from="1676894159010" duration="23544000" />
+      <workItem from="1677261013428" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -185,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676828218351</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Change Todolist, App.tsx!">
+      <created>1676880523714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676880523714</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +222,7 @@
     <MESSAGE value="repeating lessons" />
     <MESSAGE value="Completed first level!" />
     <MESSAGE value="Change Todolist.tsx!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Todolist.tsx!" />
+    <MESSAGE value="Change Todolist, App.tsx!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Todolist, App.tsx!" />
   </component>
 </project>
