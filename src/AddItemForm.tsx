@@ -1,5 +1,7 @@
 import {ChangeEvent, useState} from "react";
 import {EditableSpan} from "./EditableSpan";
+import {Button, TextField} from "@material-ui/core";
+import {LibraryAdd} from "@material-ui/icons";
 
 type AddItemFormPropsType = {
     addTitle: (title: string) => void
@@ -16,7 +18,7 @@ export const AddItemForm = (props: AddItemFormPropsType) => {
     }
 
     const onClickHandler = () => {
-        if (titleTask.trim() == '')
+        if (titleTask.trim() === '')
         {setError('404')}
         else {
             props.addTitle(titleTask.trim())
@@ -25,13 +27,17 @@ export const AddItemForm = (props: AddItemFormPropsType) => {
     }
 
     return <div>
-        <input value={titleTask}
+               <TextField value={titleTask}
                onChange={ onChangeHandler }
                className={ error ? 'error' : ''}
+               label="Outlined"
+               variant='outlined'
         />
-        <button onClick={ onClickHandler }
+        <Button onClick={ onClickHandler } variant={'contained'} color={'primary'}
                 // disabled={titleTask  ? false : true}
-        >+</button>
+        >
+            <LibraryAdd />
+        </Button>
         <div className={'error-message'}>{error}</div>
 
 
