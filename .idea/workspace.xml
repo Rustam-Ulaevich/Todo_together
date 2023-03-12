@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Added material-ui!">
-      <change afterPath="$PROJECT_DIR$/src/state/todolist-reducer.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/todolist-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/user-reducer.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/user-reducer.ts" afterDir="false" />
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Added tests!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolist-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolist-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolist-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolist-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +169,7 @@
       <workItem from="1677933934760" duration="2201000" />
       <workItem from="1677943297711" duration="13782000" />
       <workItem from="1678035259291" duration="3177000" />
-      <workItem from="1678348916882" duration="12073000" />
+      <workItem from="1678348916882" duration="16478000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -257,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678010818437</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added tests!">
+      <created>1678511800944</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678511800944</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added tests!">
+      <created>1678511810521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678511810521</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +296,7 @@
     <MESSAGE value="Change Todolist.tsx!" />
     <MESSAGE value="Change Todolist, App.tsx!" />
     <MESSAGE value="Added material-ui!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added material-ui!" />
+    <MESSAGE value="Added tests!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests!" />
   </component>
 </project>

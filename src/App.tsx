@@ -25,18 +25,20 @@ const App = () => {
     let todolist1 = v1()
     let todolist2 = v1()
 
-    let [todolists, setTodolists] = useState<Array<TodolistType>>([{
-        id: todolist1,
-        title: 'What to learn',
-        filter: "All"
-    }, {id: todolist2, title: 'What to bye', filter: "Active"},])
+    let [todolists, setTodolists] = useState<Array<TodolistType>>([
+        {id: todolist1, title: 'What to learn', filter: "All"},
+        {id: todolist2, title: 'What to bye', filter: "Active"},
+    ])
 
     let [tasks, setTasks] = useState({
-        [todolist1]: [{id: v1(), title: 'HTML', isDone: true}, {id: v1(), title: 'CSS', isDone: true}, {
-            id: v1(),
-            title: 'JavaScript',
-            isDone: false
-        },], [todolist2]: [{id: v1(), title: 'Beer', isDone: true}, {id: v1(), title: 'CSS', isDone: false},],
+        [todolist1]: [
+            {id: v1(), title: 'HTML', isDone: true},
+            {id: v1(), title: 'CSS', isDone: true},
+            {id: v1(), title: 'JavaScript', isDone: false},
+        ],
+        [todolist2]: [
+            {id: v1(), title: 'Beer', isDone: true},
+            {id: v1(), title: 'CSS', isDone: false},],
     })
 
     function removeTask(id: string, todolistId: string) {
