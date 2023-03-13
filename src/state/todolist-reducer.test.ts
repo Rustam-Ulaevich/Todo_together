@@ -1,9 +1,9 @@
 import {v1} from "uuid";
 import {
-    AddTodolistAC,
-    ChangeTodolistTitleAC, ChangeValueFilterAC,
+    addTodolistAC,
+    changeTodolistTitleAC, changeValueFilterAC,
     ChangeValueFilterActionType,
-    RemoveTodolistAC,
+    removeTodolistAC,
     todolistsReducer
 } from "./todolist-reducer";
 import {FilterValueType, TodolistType} from "../App";
@@ -18,7 +18,7 @@ test('Remove todolist', () => {
     ]
 
     let endState = todolistsReducer(
-        startState, RemoveTodolistAC(todolistId2)
+        startState, removeTodolistAC(todolistId2)
     )
 
     expect(endState.length).toBe(1)
@@ -36,7 +36,7 @@ test('Add todolist', () => {
     let newNameTodolist = 'BBB'
 
     let endState = todolistsReducer( startState,
-        AddTodolistAC(newNameTodolist)
+        addTodolistAC(newNameTodolist)
     )
 
     expect(endState.length).toBe(3)
@@ -55,7 +55,7 @@ test('Change todolist title', () => {
     let newTitle = 'CCC'
 
     let endState = todolistsReducer( startstate,
-        ChangeTodolistTitleAC(todolistId2, newTitle)
+        changeTodolistTitleAC(todolistId2, newTitle)
 )
 
     expect(endState[1].title).toBe('CCC')
@@ -73,7 +73,7 @@ test('Change value filter', () => {
 
     let newValue: FilterValueType = "Active"
 
-    let endState = todolistsReducer( startState, ChangeValueFilterAC(todolistId2, newValue))
+    let endState = todolistsReducer( startState, changeValueFilterAC(todolistId2, newValue))
 
     expect(endState[1].filter).toBe('Active')
 })
