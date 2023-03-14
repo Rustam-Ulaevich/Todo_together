@@ -8,30 +8,28 @@ import {
 } from "./todolist-reducer";
 import {FilterValueType, TodolistType} from "../App";
 
-test('Remove todolist', () => {
-    let todolistId1 = v1()
-    let todolistId2 = v1()
+let todolistId1: string
+let todolistId2: string
+let startState: Array<TodolistType>
 
-    let startState: Array<TodolistType> = [
+beforeEach( () => {
+    todolistId1 = v1()
+    todolistId2 = v1()
+
+    startState = [
         {id: todolistId1, title: 'White to learn', filter: 'All'},
         {id: todolistId2, title: 'White to buy', filter: 'All'},
     ]
+})
 
-    let endState = todolistsReducer(
-        startState, removeTodolistAC(todolistId2)
-    )
+test('Remove todolist', () => {
+
+    let endState = todolistsReducer(startState, removeTodolistAC(todolistId2))
 
     expect(endState.length).toBe(1)
 })
 
 test('Add todolist', () => {
-    let todolistId1 = v1()
-    let todolistId2 = v1()
-
-    let startState: Array<TodolistType> = [
-        {id: todolistId1, title: 'Bla', filter: 'All'},
-        {id: todolistId2, title: 'AAA', filter: 'All'},
-    ]
 
     let newNameTodolist = 'BBB'
 
@@ -44,32 +42,18 @@ test('Add todolist', () => {
 })
 
 test('Change todolist title', () => {
-    let todolistId1 = v1()
-    let todolistId2 = v1()
-
-    let startstate: Array<TodolistType> = [
-        {id: todolistId1, title: 'AAA', filter: 'All'},
-        {id: todolistId2, title: 'BBB', filter: 'All'},
-    ]
 
     let newTitle = 'CCC'
 
-    let endState = todolistsReducer( startstate,
+    let endState = todolistsReducer(
+        startState,
         changeTodolistTitleAC(todolistId2, newTitle)
-)
+    )
 
     expect(endState[1].title).toBe('CCC')
 })
 
 test('Change value filter', () => {
-
-    let todolistId1 = v1()
-    let todolistId2 = v1()
-
-    let startState: Array<TodolistType> = [
-        {id: todolistId1, title: 'A', filter: 'All'},
-        {id: todolistId2, title: 'A', filter: 'All'},
-    ]
 
     let newValue: FilterValueType = "Active"
 
