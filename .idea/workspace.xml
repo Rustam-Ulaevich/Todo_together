@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="change todolist-reducer.test.ts.ts, task-reducer.test.ts, todolists-tasks-reducer.test.ts!">
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Аfter a break, rewriting the project!">
+      <change afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithRedux.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/task-reducer.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolist-reducer.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolist-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -209,7 +195,8 @@
       <workItem from="1677943297711" duration="13782000" />
       <workItem from="1678035259291" duration="3177000" />
       <workItem from="1678348916882" duration="45824000" />
-      <workItem from="1685787463362" duration="652000" />
+      <workItem from="1685787463362" duration="3142000" />
+      <workItem from="1685866967427" duration="12002000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -330,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678805258159</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Аfter a break, rewriting the project!">
+      <created>1685788301213</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685788301213</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +355,7 @@
     <MESSAGE value="create todolist-reducer.ts!" />
     <MESSAGE value="create todolist-reducer.test.ts.ts, task-reducer.test.ts, todolists-tasks-reducer.test.ts!" />
     <MESSAGE value="change todolist-reducer.test.ts.ts, task-reducer.test.ts, todolists-tasks-reducer.test.ts!" />
-    <option name="LAST_COMMIT_MESSAGE" value="change todolist-reducer.test.ts.ts, task-reducer.test.ts, todolists-tasks-reducer.test.ts!" />
+    <MESSAGE value="Аfter a break, rewriting the project!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Аfter a break, rewriting the project!" />
   </component>
 </project>
