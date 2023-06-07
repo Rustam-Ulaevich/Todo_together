@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="Аfter a break, rewriting the project!">
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="The 5th lesson has been completed">
+      <change afterPath="$PROJECT_DIR$/src/components/AddItemForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -44,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/IT/IT_INCUBATOR/TODOLIST/todolist_together/Todo_together/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/IT/IT_INCUBATOR/TODOLIST/todolist_together/Todo_together/node_modules/react-scripts",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
-    "ts.external.directory.path": "D:\\IT\\IT_INCUBATOR\\TODOLIST\\todolist1\\Todo_together\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IT/IT_INCUBATOR/TODOLIST/todolist_together/Todo_together/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/IT/IT_INCUBATOR/TODOLIST/todolist_together/Todo_together/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\IT\\IT_INCUBATOR\\TODOLIST\\todolist1\\Todo_together\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src" />
@@ -194,7 +196,8 @@
       <workItem from="1678348916882" duration="45824000" />
       <workItem from="1685787463362" duration="3142000" />
       <workItem from="1685866967427" duration="12002000" />
-      <workItem from="1686066102609" duration="5649000" />
+      <workItem from="1686066102609" duration="6186000" />
+      <workItem from="1686111838681" duration="9499000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -322,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685788301213</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="The 5th lesson has been completed">
+      <created>1686077263749</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686077263749</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,18 +364,7 @@
     <MESSAGE value="create todolist-reducer.test.ts.ts, task-reducer.test.ts, todolists-tasks-reducer.test.ts!" />
     <MESSAGE value="change todolist-reducer.test.ts.ts, task-reducer.test.ts, todolists-tasks-reducer.test.ts!" />
     <MESSAGE value="Аfter a break, rewriting the project!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Аfter a break, rewriting the project!" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Todolist.tsx</url>
-          <line>27</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="The 5th lesson has been completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="The 5th lesson has been completed" />
   </component>
 </project>
