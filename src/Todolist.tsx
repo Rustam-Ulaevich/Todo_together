@@ -52,7 +52,6 @@ export const Todolist = (props: PropsType) => {
             </IconButton>
         </h3>
 
-
         <AddItemForm addItem={onClickAddTask}/>
 
         <div>
