@@ -45,12 +45,10 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             }
             return newState
         }
-
-
-            defualt: throw new Error('This action type is undefined')
+        default:
+            throw new Error('This action type is undefined')
     }
 }
-
 
 export const RemoveTodolistAC = (id: string): RemoveTodolistType => {
     return {type: 'REMOVE-TODOLIST', id}
