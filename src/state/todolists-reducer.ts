@@ -62,6 +62,8 @@ export const RenameTodolistAC = (id: string, title: string): RenameTodolistType 
     return { type: "RENAME-TODOLIST", id, title}
 }
 
+
+
 export const ChangeFilterTodolistAC = (id: string, filter: FilterValueType): ChangeFilterTodolistType => {
     return { type: "CHANGE-FILTER-TODOLIST", filter, id}
 }
