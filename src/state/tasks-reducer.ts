@@ -1,5 +1,6 @@
 import {TasksType} from "../App";
 import {v1} from "uuid";
+import {AddTodolistActionType, RemoveTodolistActionType} from './todolists-reducer'
 
 type RemoveTaskActionType = {
     type: 'REMOVE-TASK'
@@ -24,7 +25,7 @@ type ChangeStatusTaskActionType = {
     isDone: boolean
 }
 
-type ActionType = RemoveTaskActionType | AddTaskActionType | RenameTaskActionType | ChangeStatusTaskActionType
+type ActionType = RemoveTaskActionType | AddTaskActionType | RenameTaskActionType | ChangeStatusTaskActionType | AddTodolistActionType | RemoveTodolistActionType
 
 export const tasksReducer = (state: TasksType, action: ActionType): TasksType => {
     switch (action.type) {
@@ -51,11 +52,22 @@ export const tasksReducer = (state: TasksType, action: ActionType): TasksType =>
             return {...state, [action.idTodolist]: state[action.idTodolist].map(task=> task.id===action.id?{...task, isDone:action.isDone}:task)}
 
             // let copyState = {...state}
-            // let {...task} = copyState[action.idTodolist].find(t => t.id === action.id)
-            // if ({...task}) {
+            // let tasks = copyState[action.idTodolist]
+            // let task = tasks.find(t => t.id === action.id)
+            // if (task) {
             //     task.isDone = action.isDone
             // }
             // return copyState
+        }
+        case "ADD-TODOLIST": {
+            const newState = {...state}
+            newState[action.todolistId] = []
+            return newState
+        }
+        case "REMOVE-TODOLIST": {
+            let newState = {...state};
+            delete newState[action.id]
+            return newState
         }
         default:
             throw new Error('This action type is undefined')
