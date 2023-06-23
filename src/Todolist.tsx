@@ -27,12 +27,12 @@ type PropsType = {
 }
 
 export const Todolist = (props: PropsType) => {
+    debugger
 
     const onClickDeleteTodolist = () => props.removeTodolist(props.id);
     const onChangeTitleTodolist = (newTitle: string) => {
         props.renameTodolist(newTitle, props.id)
     }
-
 
     const onClickAddTask = (title: string) => props.addTask(title, props.id);
 
@@ -42,12 +42,8 @@ export const Todolist = (props: PropsType) => {
 
     return <div>
         <h3>
-            <EditableSpan title={props.title}
-                          changeTitle={onChangeTitleTodolist}/>
-            {/*<button onClick={onClickDeleteTodolist}> ✖</button>*/}
-            <IconButton aria-label="delete"
-                        onClick={onClickDeleteTodolist}
-            >
+            <EditableSpan title={props.title} changeTitle={onChangeTitleTodolist}/>
+            <IconButton aria-label="delete" onClick={onClickDeleteTodolist}>
                 <Delete />
             </IconButton>
         </h3>
@@ -55,12 +51,10 @@ export const Todolist = (props: PropsType) => {
         <AddItemForm addItem={onClickAddTask}/>
 
         <div>
+            {props.tasks.map( (t) => {
 
-                {props.tasks.map( (t) => {
+                    const onClickButton = () => props.removeTasks(t.id, props.id)
 
-                    const onClickButton = () => {
-                        props.removeTasks(t.id, props.id)
-                    }
                     const onClickInput = (e: ChangeEvent<HTMLInputElement>) => {
                         props.changeTaskStatus(t.id, e.currentTarget.checked, props.id)
                     }
@@ -69,8 +63,7 @@ export const Todolist = (props: PropsType) => {
                     }
 
                     return (
-                        <div className={ t.isDone ? 'is-done' : ''}
-                            key={t.id}>
+                        <div className={ t.isDone ? 'is-done' : ''} key={t.id}>
                             <Checkbox onChange={onClickInput}
                                       checked={t.isDone}
                             />
@@ -84,7 +77,6 @@ export const Todolist = (props: PropsType) => {
                         </div>
                     )})
                 }
-
         </div>
         <div>
             <Button variant = {props.filter === 'All' ? 'contained' : 'text'}
