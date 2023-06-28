@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="2-part of the 9th lesson is completed">
-      <change afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="1-part of the 10th lesson is completed (connecting Redux)">
+      <change afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IT/IT_INCUBATOR/TODOLIST/todolist1/Todo_together/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;D:/IT/IT_INCUBATOR/TODOLIST/todolist1/Todo_together/node_modules/react-scripts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\IT\\IT_INCUBATOR\\TODOLIST\\todolist1\\Todo_together\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/IT/IT_INCUBATOR/TODOLIST/Todo_together/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/IT/IT_INCUBATOR/TODOLIST/Todo_together/node_modules/react-scripts",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
+    "ts.external.directory.path": "D:\\IT\\IT_INCUBATOR\\TODOLIST\\Todo_together\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IT\IT_INCUBATOR\TODOLIST\Todo_together\src" />
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist1\Todo_together\src" />
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src" />
     </key>
@@ -74,7 +76,20 @@
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src\Todolist.tsx" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.property with todolistId should be deleted">
+  <component name="RunManager" selected="Jest.correct todolist should be added">
+    <configuration name="correct todolist should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct todolist should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="ids should be equals (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -83,19 +98,6 @@
       <envs />
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.ts" />
-      <test-names>
-        <test-name value="ids should be equals" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="ids should be equals" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test..ts" />
       <test-names>
         <test-name value="ids should be equals" />
       </test-names>
@@ -139,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.property with todolistId should be deleted" />
         <item itemvalue="Jest.ids should be equals (1)" />
         <item itemvalue="Jest.new array should be added when new todolist is added" />
-        <item itemvalue="Jest.ids should be equals" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +204,10 @@
       <workItem from="1685866967427" duration="12002000" />
       <workItem from="1686066102609" duration="6186000" />
       <workItem from="1686111838681" duration="17244000" />
-      <workItem from="1687493048550" duration="1986000" />
+      <workItem from="1687493048550" duration="5124000" />
+      <workItem from="1687624187606" duration="2568000" />
+      <workItem from="1687685900164" duration="340000" />
+      <workItem from="1687870880196" duration="8738000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -372,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687411943317</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1-part of the 10th lesson is completed (connecting Redux)">
+      <created>1687521693291</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687521693291</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,15 +422,17 @@
     <MESSAGE value="The 8th lesson has been changed added some space" />
     <MESSAGE value="1-part of the 9th lesson is completed" />
     <MESSAGE value="2-part of the 9th lesson is completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="2-part of the 9th lesson is completed" />
+    <MESSAGE value="1-part of the 10th lesson is completed (connecting Redux)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1-part of the 10th lesson is completed (connecting Redux)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/state/todolists-reducer.ts</url>
-          <line>58</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/state/tasks-reducer.ts</url>
+          <line>70</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

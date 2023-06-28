@@ -20,17 +20,18 @@ export type ChangeFilterTodolistActionType = {
     id: string
     filter: FilterValueType
 }
-
 type ActionType = RemoveTodolistActionType | AddTodolistActionType | RenameTodolistActionType | ChangeFilterTodolistActionType
 
-export const todolistsReducer = (state: Array<TodolistType>, action: ActionType): Array<TodolistType> => {
+const initialState: Array<TodolistType> =  []
+
+export const todolistsReducer = (state: Array<TodolistType> = initialState, action: ActionType): Array<TodolistType> => {
     switch (action.type) {
         case 'REMOVE-TODOLIST':
             return state.filter(el => el.id !== action.id)
 
         case 'ADD-TODOLIST':
-            debugger
-            return [...state, {id: action.todolistId, title: action.title, filter: "All"}]
+            //debugger
+            return [{id: action.todolistId, title: action.title, filter: "All"}, ...state]
 
         case "RENAME-TODOLIST":
            let todolist = [...state].find( tl => tl.id === action.id)
@@ -48,7 +49,7 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             return newState
         }
         default:
-            throw new Error('This action type is undefined')
+            return state;
     }
 }
 

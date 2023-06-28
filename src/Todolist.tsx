@@ -27,7 +27,7 @@ type PropsType = {
 }
 
 export const Todolist = (props: PropsType) => {
-    debugger
+    //debugger
 
     const onClickDeleteTodolist = () => props.removeTodolist(props.id);
     const onChangeTitleTodolist = (newTitle: string) => {

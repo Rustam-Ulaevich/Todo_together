@@ -27,7 +27,9 @@ type ChangeStatusTaskActionType = {
 
 type ActionType = RemoveTaskActionType | AddTaskActionType | RenameTaskActionType | ChangeStatusTaskActionType | AddTodolistActionType | RemoveTodolistActionType
 
-export const tasksReducer = (state: TasksType, action: ActionType): TasksType => {
+const initialState: TasksType = {}
+
+export const tasksReducer = (state: TasksType = initialState, action: ActionType): TasksType => {
     switch (action.type) {
         case 'REMOVE-TASK': {
             let newState = {...state}
@@ -60,7 +62,6 @@ export const tasksReducer = (state: TasksType, action: ActionType): TasksType =>
             // return copyState
         }
         case "ADD-TODOLIST": {
-            debugger
             const newState = {...state}
             newState[action.todolistId] = []
             return newState
@@ -71,7 +72,7 @@ export const tasksReducer = (state: TasksType, action: ActionType): TasksType =>
             return newState
         }
         default:
-            throw new Error('This action type is undefined')
+            return state;
     }
 }
 
