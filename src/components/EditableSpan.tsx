@@ -1,4 +1,4 @@
-import {ChangeEvent, useState} from "react";
+import React, {ChangeEvent, useState} from "react";
 import {TextField} from "@material-ui/core";
 
 type PropsType = {
@@ -6,7 +6,9 @@ type PropsType = {
     changeTitle: (newTitle: string) => void
 }
 
-export const EditableSpan = (props: PropsType) => {
+export const EditableSpan = React.memo((props: PropsType) => {
+
+    console.log('EditableSpan')
 
     let [newTitle, setNewTitle] = useState('')
     let [status, setStatus] = useState(true)
@@ -30,4 +32,4 @@ export const EditableSpan = (props: PropsType) => {
                      onBlur={onActiveSpan}
                      autoFocus
             />
-}
+})
