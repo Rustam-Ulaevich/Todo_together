@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -12,13 +10,10 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
-    "@types/react-redux": "^7.1.25",
-    "@types/uuid": "^9.0.1",
+    "@types/uuid": "^9.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^8.1.1",
     "react-scripts": "5.0.0",
-    "redux": "^4.2.1",
     "typescript": "^4.4.2",
     "uuid": "^9.0.0",
     "web-vitals": "^2.1.0"
@@ -27,15 +22,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -51,18 +43,9 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "7.0.24",
-    "@storybook/addon-interactions": "7.0.24",
-    "@storybook/addon-links": "7.0.24",
-    "@storybook/blocks": "7.0.24",
-    "@storybook/preset-create-react-app": "7.0.24",
-    "@storybook/react": "7.0.24",
-    "@storybook/react-webpack5": "7.0.24",
-    "@storybook/testing-library": "0.0.14-next.2",
     "babel-plugin-named-exports-order": "0.0.2",
     "eslint-plugin-storybook": "^0.6.12",
     "prop-types": "15.8.1",
-    "storybook": "7.0.24",
     "webpack": "5.88.1"
   }
 }
