@@ -19,7 +19,9 @@ export function Todolist(props: PropsType) {
     let [error, setError] = useState(false)
 
     function onChangeHandler(e: ChangeEvent<HTMLInputElement>) {
+        setError(true)
         setNewTitle(e.currentTarget.value)
+
     }
     function onClickHandler() {
         if(newTitle !== '' ){
@@ -37,6 +39,7 @@ export function Todolist(props: PropsType) {
                    onChange={onChangeHandler}
                    type='text'/>
             <button onClick={onClickHandler}>+</button>
+            {error ? <div className='error-message'>Заполнить поле</div> : '' }
         </div>
         <ul>
             {props.task.map( (t) => <li key={t.id}>
