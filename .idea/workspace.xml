@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="repeat">
+    <list default="true" id="67d96db6-044c-4dff-a837-4ad21f940bca" name="Changes" comment="1 lessons of the 1st month">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
@@ -47,6 +46,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/IT/IT_INCUBATOR/TODOLIST/Todo_together/src/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -68,6 +69,8 @@
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="D:\IT\IT_INCUBATOR\TODOLIST\Todo_together\src\Todolist.tsx" />
+      <recent name="D:\IT\IT_INCUBATOR\TODOLIST\Todo_together\src\Todoist.tsx" />
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\Todo_together\src\components\Task.tsx" />
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src\EditableSpan.tsx" />
       <recent name="D:\IT\IT_INCUBATOR\TODOLIST\todolist_together\Todo_together\src\Todolist.tsx" />
@@ -208,7 +211,18 @@
       <workItem from="1688873690243" duration="16144000" />
       <workItem from="1692844855488" duration="1195000" />
       <workItem from="1693497363370" duration="76000" />
-      <workItem from="1693892831675" duration="12293000" />
+      <workItem from="1693892831675" duration="13048000" />
+      <workItem from="1694533089352" duration="159000" />
+      <workItem from="1694591593526" duration="13119000" />
+      <workItem from="1694694154603" duration="1881000" />
+      <workItem from="1695191529653" duration="599000" />
+      <workItem from="1695294379558" duration="10906000" />
+      <workItem from="1695526174565" duration="14071000" />
+      <workItem from="1696740723045" duration="105000" />
+      <workItem from="1698734681179" duration="284000" />
+      <workItem from="1698734999872" duration="7225000" />
+      <workItem from="1698745995461" duration="1369000" />
+      <workItem from="1698844717180" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="Repeat the Todolist course. 1 lesson">
       <created>1668452305530</created>
@@ -427,7 +441,35 @@
       <option name="project" value="LOCAL" />
       <updated>1693899173749</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="repeated lessons of the 1st month">
+      <created>1693906526903</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693906526903</updated>
+    </task>
+    <task id="LOCAL-00033" summary="cleane lessons of the 1st month">
+      <created>1694533188609</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1694533188609</updated>
+    </task>
+    <task id="LOCAL-00034" summary="1 lessons of the 1st month">
+      <created>1694697707350</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1694697707350</updated>
+    </task>
+    <task id="LOCAL-00035" summary="1 lessons of the 1st month">
+      <created>1695382392545</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1695382392545</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,9 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Repeat the Todolist course. 2 lesson" />
-    <MESSAGE value="Repeat the Todolist course. 3 lesson" />
-    <MESSAGE value="repeating lessons" />
     <MESSAGE value="Completed first level!" />
     <MESSAGE value="Change Todolist.tsx!" />
     <MESSAGE value="Change Todolist, App.tsx!" />
@@ -470,7 +509,10 @@
     <MESSAGE value="Storybook added" />
     <MESSAGE value="using Storybook" />
     <MESSAGE value="repeat" />
-    <option name="LAST_COMMIT_MESSAGE" value="repeat" />
+    <MESSAGE value="repeated lessons of the 1st month" />
+    <MESSAGE value="cleane lessons of the 1st month" />
+    <MESSAGE value="1 lessons of the 1st month" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 lessons of the 1st month" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
