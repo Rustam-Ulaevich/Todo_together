@@ -1,44 +1,46 @@
-import {useState} from "react";
-
-export type TasksType = {
-    id: string
-    title: string
-    isDone: boolean
-}
+import React, { ChangeEvent, useState } from "react";
+import { TaskType } from "./App"
 
 type PropsType = {
     id: string
     title: string
-    tasks: Array<TasksType>
-    addTask: (newTitle: string, todolistId: string)=>void
-    deleteTask: (id: string, todolistId: string)=>void
+    tasks: Array<TaskType>
+    deleteTask: (id: string, taskId: string) => void
+    addTask: (title: string, id: string) => void
 }
 
+export const Todolist = (props: PropsType) => {
 
-export function Todolist(props: PropsType) {
+    let [newTitle, setNewTitle] = useState('')
 
-    let [valueTitle, setValueTitle] = useState('')
+    function onChangeHandler(event: ChangeEvent<HTMLInputElement>){
+        setNewTitle(event.currentTarget.value)
+    }
+
+    function onClickHandler(){
+        props.addTask(newTitle, props.id)
+    }
+
+
 
 
     return <div>
-        <h1>{props.title}</h1>
+        <h3>{props.title}</h3>
+        <button>x</button>
         <div>
-            <input  type="text" onChange={(event) => setValueTitle(event.currentTarget.value)}/>
-            <button onClick={ () => props.addTask(valueTitle, props.id)}>+</button>
+            <input value={newTitle} onChange={onChangeHandler}/>
+            <button onClick={onClickHandler}>+</button>
         </div>
+        
         <ul>
-            {props.tasks.map((t) => <li>
+            {props.tasks.map( t => (
+                <li>
                     <input type="checkbox" checked={t.isDone}/>
                     <span>{t.title}</span>
-                    <button onClick={ () => props.deleteTask(t.id, props.id)}>x</button>
-            </li>
-            )}
+                    <button onClick={() => {props.deleteTask(props.id, t.id)}}>x</button>
+                </li>
+            ))}
         </ul>
-        <div>
-            <button>All</button>
-            <button>Active</button>
-            <button>Completed</button>
-        </div>
 
-    </div>;
+    </div>
 }
